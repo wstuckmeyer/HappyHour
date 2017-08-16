@@ -1,0 +1,14 @@
+<%= form_for @attend do |f| %>
+	<%= f.label :First_Name %>
+	<%= f.text_field :fname %>
+	<br>
+	<%= f.label :Last_Name %>
+	<%= f.text_field :lname %>
+	<br>
+	<%= f.label :Age %>
+	<%= f.text_field :age %>
+	<br>
+	<%= f.label :Likes_Beer %>
+	<%= f.check_box :likesbeer %>
+	<%= f.submit %>
+<%end%>

@@ -1,0 +1,13 @@
+<h1>Happy Hour</h1>
+<a method='GET' href='/attendees/new'>New</a>
+<% @attend.each do |t| %>
+	<p><%= t.fname %></p>
+	<p><%= t.lname %></p>
+	<p><%=t.age %></p>
+	<p><%=t.likesbeer%></p>
+	<a type='submit' method ="POST" href='/attendees/<%=t.id%>/edit'>Edit</a>
+	<%= link_to "delete", t, method: :delete %>
+	<br>
+<%end%>
+
+
